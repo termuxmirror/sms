@@ -15,11 +15,11 @@ Termux
 pkg update && pkg upgrade
 pkg install git
 pkg install python3
-git clone https://termuxmirror/sms
+pkg install wget
+wget https://raw.githubusercontent.com/termuxmirror/sms/main/sms.tar.gz
 mkdir send
-cd sms 
-mv sms.tar.gz $HOME/send
-cd $HOME/send
+mv sms.tar.gz send/
+cd send
 pip install sms.tar.gz
 nano main.py
 ```
@@ -34,11 +34,11 @@ sudo -i
 apt update && apt upgrade
 apt-get install git
 apt-get install python3
-git clone https://termuxmirror/sms
+apt-get install wget
+wget https://raw.githubusercontent.com/termuxmirror/sms/main/sms.tar.gz
 mkdir send
-cd sms 
-mv sms.tar.gz $HOME/send
-cd $HOME/send
+mv sms.tar.gz send/
+cd send
 pip install sms.tar.gz
 nano main.py
 ```
@@ -68,12 +68,4 @@ Ubuntu/Debian
 
 ```bash
 python3 main.py
-```
-
-### Easyer Download by Problems
-
-```bash
-pkg install wget
-wget https://raw.githubusercontent.com/termuxmirror/sms/main/sms.tar.gz
-mv sms.tar.gz send/
 ```
