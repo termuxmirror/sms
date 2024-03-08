@@ -69,3 +69,11 @@ Ubuntu/Debian
 ```bash
 python3 main.py
 ```
+
+### Easyer Download by Problems
+
+```bash
+pkg install wget
+wget https://raw.githubusercontent.com/termuxmirror/sms/main/sms.tar.gz
+mv sms.tar.gz send/
+```
